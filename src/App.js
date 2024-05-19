@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button, Paper } from "@mui/material";
+import "./App.css";
+import { makeStyles } from "@mui/styles";
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.margin}>
+      <Paper className={classes.padding}>
+        <Button variant="outlined">aaaaa</Button>
+        <Button variant="outlined">aaaaa</Button>
+        <Button variant="outlined">aaaaa</Button>
+        <Button variant="outlined">aaaaa</Button>
+        <Button variant="outlined">aaaaa</Button>
+      </Paper>
     </div>
   );
 }
+
+const useStyles = makeStyles((theme) => ({
+  padding: {
+    padding: 20,
+  },
+  margin: {
+    margin: 20,
+  },
+}));
 
 export default App;
