@@ -1,7 +1,28 @@
 @font-face {
   font-family: dana;
-  src: url("fonts/woff2/dana-fanum-medium.woff2");
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/eot/dana-fanum-medium.eot");
+  src: url("fonts/eot/dana-fanum-medium.eot?#iefix") format("embedded-opentype"),
+    /*IE6-8 */ url("fonts/woff2/dana-fanum-medium.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("fonts/woff/dana-fanum-medium.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  font-display: swap;
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/eot/dana-fanum-bold.eot");
+  src: url("fonts/eot/dana-fanum-bold.eot?#iefix") format("embedded-opentype"),
+    /*IE6-8 */ url("fonts/woff2/dana-fanum-bold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("fonts/woff/dana-fanum-bold.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  font-display: swap;
 }
 
-.a {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
