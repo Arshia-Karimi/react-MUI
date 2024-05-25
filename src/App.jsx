@@ -405,12 +405,12 @@ const useStyles = makeStyles((theme) => ({
   container: {
     paddingLeft: 16,
     paddingRight: 16,
-    marginTop: 40,
+    marginTop: 10,
 
     [theme.breakpoints.up("md")]: {
       paddingLeft: 297,
       paddingRight: 297,
-      marginTop: 112,
+      marginTop: 50,
     },
   },
 
@@ -860,8 +860,9 @@ const useStyles = makeStyles((theme) => ({
   Rs: {
     fontSize: "12px !important",
   },
+
   Leftover: {
-    color: "#010660",
+    color: "rgba(129, 0, 0, 0.729)",
     fontSize: "10px !important",
     marginBottom: "-5px !important",
     marginLeft: "-10px !important",
@@ -891,7 +892,7 @@ const useStyles = makeStyles((theme) => ({
 
   Leftover2: {
     display: "none",
-    color: "010660",
+    color: "rgba(255, 0, 0, 0.7)",
     fontSize: "10px !important",
     marginTop: "5px !important",
     marginLeft: "-10px !important",
@@ -911,6 +912,9 @@ const useStyles = makeStyles((theme) => ({
 
     "& > :not(:last-child)": {
       borderLeft: "1px solid #ccc",
+      [theme.breakpoints.up("md")]: {
+        borderLeft: 0,
+      },
     },
     [theme.breakpoints.up("md")]: {
       width: "45%",
@@ -1133,6 +1137,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "12px",
     fontWeight: "bold",
   },
+
   trText1: {
     fontSize: "12px !important",
     fontWeight: "bold",
