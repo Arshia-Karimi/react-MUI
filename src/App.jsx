@@ -4,7 +4,7 @@ import { makeStyles } from "@mui/styles";
 function App() {
   const style = useStyles();
 
-  return <div></div>;
+  return <div>a</div>;
 }
 
 const useStyles = makeStyles((theme) => ({}));
