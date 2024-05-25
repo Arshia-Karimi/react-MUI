@@ -535,7 +535,7 @@ const useStyles = makeStyles((theme) => ({
       height: 70,
       marginRight: 23,
       padding: 12,
-      marginBottom: 15,
+      marginBottom: 10,
     },
   },
 
@@ -1134,10 +1134,13 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
   },
   trText1: {
-    fontSize: 12,
+    fontSize: "12px !important",
     fontWeight: "bold",
     textAlign: "end",
-    paddingLeft: 48,
+    paddingLeft: 30,
+    [theme.breakpoints.up("md")]: {
+      paddingLeft: 48,
+    },
   },
 }));
 
